@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TaskTimerApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnbordingView()
         }
     }
 }
