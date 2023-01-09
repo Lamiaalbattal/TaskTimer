@@ -25,15 +25,15 @@ struct SplashScreenView: View {
             }
         } else {
             ZStack {
-                Color.red
-                    .ignoresSafeArea()
-                
-//                Image("logo")
+//                Color("splashColor")
+//                    .ignoresSafeArea()
+//                
+                Image("logo")
 //                    .resizable()
-//                    .scaledToFit()
-//                    .aspectRatio(0.3, contentMode: .fit)
-//                    .scaleEffect(size)
-//                    .opacity(opacity)
+                    .scaledToFit()
+                    .aspectRatio(0.3, contentMode: .fit)
+                    .scaleEffect(size)
+                    .opacity(opacity)
                     .onAppear {
                         withAnimation(.easeIn(duration: 1.2)) {
                             self.size = 1.00

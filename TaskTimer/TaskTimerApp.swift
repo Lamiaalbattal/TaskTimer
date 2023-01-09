@@ -12,7 +12,8 @@ struct TaskTimerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            OnbordingView()
+            HomeView()
+            
         }
     }
 }

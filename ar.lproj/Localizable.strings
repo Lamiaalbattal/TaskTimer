@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  TaskTimer
+
+  Created by Lamia Aldossari on 07/01/2023.
+  
+*/
+"Master you minutes to master your life" = "سيطر على وقتك تسيطر على حياتك" ;
+"Manage Your Tasks" = "آدر مهامك" ;
+"Work On Time" = "اعمل في الوقت المحدد" ;
+"A conveninet and easy task manager" = "مدير مهام مناسب وسهل" ;
+"Get your task done on time" = "أنجز مهامك في وقتها" ;
+"skip" = " تجاهل" ;
+"Get Started" = " ابدأ" ;
+"Add Task" = "أضف مهمه" ;
+"Tasks" = "المهام";
+"Task Name" = "اسم المهمه";

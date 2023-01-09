@@ -30,7 +30,7 @@ enum OnbordingType: CaseIterable {
         case .time:
             return "Master you minutes to master your life"
         case .task:
-            return "Manage Your Task"
+            return "Manage Your Tasks"
         case .work:
             return "Work On Time"
     

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01930D0296B5CC100A85770 /* CountPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930CF296B5CC100A85770 /* CountPickerView.swift */; };
+		E01930D2296B5D0E00A85770 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930D1296B5D0E00A85770 /* HomeViewModel.swift */; };
+		E01930D4296B5D8E00A85770 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930D3296B5D8E00A85770 /* HomeView.swift */; };
+		E01930D6296B5E3500A85770 /* methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930D5296B5E3500A85770 /* methods.swift */; };
+		E01930D8296B5E7300A85770 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930D7296B5E7300A85770 /* TimerView.swift */; };
 		E0B04DF62963A9B3009F357D /* TaskTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04DF52963A9B3009F357D /* TaskTimerApp.swift */; };
 		E0B04DFA2963A9B4009F357D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B04DF92963A9B4009F357D /* Assets.xcassets */; };
 		E0B04DFD2963A9B4009F357D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B04DFC2963A9B4009F357D /* Preview Assets.xcassets */; };
@@ -14,9 +19,16 @@
 		E0B04E062963AD26009F357D /* SingleOnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E052963AD26009F357D /* SingleOnbordingView.swift */; };
 		E0B04E082964DE24009F357D /* TaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E072964DE24009F357D /* TaskPage.swift */; };
 		E0B04E0A2964DFF3009F357D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E092964DFF3009F357D /* SplashScreenView.swift */; };
+		E0B04E0D296A01C9009F357D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B04E0F296A01C9009F357D /* Localizable.strings */; };
+		E0B04E12296AB469009F357D /* timerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E11296AB469009F357D /* timerPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E01930CF296B5CC100A85770 /* CountPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountPickerView.swift; sourceTree = "<group>"; };
+		E01930D1296B5D0E00A85770 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E01930D3296B5D8E00A85770 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E01930D5296B5E3500A85770 /* methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = methods.swift; sourceTree = "<group>"; };
+		E01930D7296B5E7300A85770 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E0B04DF22963A9B3009F357D /* TaskTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B04DF52963A9B3009F357D /* TaskTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerApp.swift; sourceTree = "<group>"; };
 		E0B04DF92963A9B4009F357D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,6 +37,9 @@
 		E0B04E052963AD26009F357D /* SingleOnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOnbordingView.swift; sourceTree = "<group>"; };
 		E0B04E072964DE24009F357D /* TaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPage.swift; sourceTree = "<group>"; };
 		E0B04E092964DFF3009F357D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		E0B04E0E296A01C9009F357D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0B04E10296A0350009F357D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0B04E11296AB469009F357D /* timerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +56,13 @@
 		E0B04DE92963A9B3009F357D = {
 			isa = PBXGroup;
 			children = (
+				E01930D7296B5E7300A85770 /* TimerView.swift */,
+				E01930D5296B5E3500A85770 /* methods.swift */,
+				E01930D3296B5D8E00A85770 /* HomeView.swift */,
+				E01930D1296B5D0E00A85770 /* HomeViewModel.swift */,
+				E01930CF296B5CC100A85770 /* CountPickerView.swift */,
+				E0B04E11296AB469009F357D /* timerPage.swift */,
+				E0B04E0F296A01C9009F357D /* Localizable.strings */,
 				E0B04DF42963A9B3009F357D /* TaskTimer */,
 				E0B04DF32963A9B3009F357D /* Products */,
 			);
@@ -118,6 +140,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = E0B04DE92963A9B3009F357D;
 			productRefGroup = E0B04DF32963A9B3009F357D /* Products */;
@@ -135,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B04DFD2963A9B4009F357D /* Preview Assets.xcassets in Resources */,
+				E0B04E0D296A01C9009F357D /* Localizable.strings in Resources */,
 				E0B04DFA2963A9B4009F357D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,15 +170,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01930D4296B5D8E00A85770 /* HomeView.swift in Sources */,
 				E0B04E082964DE24009F357D /* TaskPage.swift in Sources */,
 				E0B04E042963ABBC009F357D /* OnbordingView.swift in Sources */,
+				E0B04E12296AB469009F357D /* timerPage.swift in Sources */,
+				E01930D6296B5E3500A85770 /* methods.swift in Sources */,
+				E01930D2296B5D0E00A85770 /* HomeViewModel.swift in Sources */,
+				E01930D8296B5E7300A85770 /* TimerView.swift in Sources */,
 				E0B04E062963AD26009F357D /* SingleOnbordingView.swift in Sources */,
 				E0B04DF62963A9B3009F357D /* TaskTimerApp.swift in Sources */,
+				E01930D0296B5CC100A85770 /* CountPickerView.swift in Sources */,
 				E0B04E0A2964DFF3009F357D /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0B04E0F296A01C9009F357D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B04E0E296A01C9009F357D /* ar */,
+				E0B04E10296A0350009F357D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E0B04DFE2963A9B4009F357D /* Debug */ = {

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SingleOnbordingView: View {
-    @Environment(\.colorScheme) var colorScheme
     @AppStorage("isUserOnboarded") var isUserOnboarded: Bool = false
     let onbordingType: OnbordingType
     
@@ -24,9 +23,8 @@ struct SingleOnbordingView: View {
                 .foregroundColor(.secondary)
             
         
-               
-            
-                        Image(colorScheme == .light ? onbordingType.image : onbordingType.image + "_dark")
+
+            Image(onbordingType.image)
                             .resizable()
                             .scaledToFit()
                             .frame(width: 300, height: 300)
@@ -42,7 +40,7 @@ struct SingleOnbordingView: View {
                     Text("Get Started")
                         .font(.headline)
                         .padding()
-                        .foregroundColor(colorScheme == .light ? .white : .black)
+                        .foregroundColor(Color.white)
                         .frame(width: 300, height: 50)
                         .background(Color("AccentColor"))
                         .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
@@ -56,7 +54,7 @@ struct SingleOnbordingView: View {
         
         
     }
-//    }
+
     
     struct SingleOnbordingView_Previews: PreviewProvider {
         static var previews: some View {
