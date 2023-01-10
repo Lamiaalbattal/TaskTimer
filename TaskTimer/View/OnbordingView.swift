@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 enum OnbordingType: CaseIterable {
     case time
     case task
@@ -42,7 +43,7 @@ enum OnbordingType: CaseIterable {
         case .time:
             return ""
         case .task:
-            return "A conveninet and easy task manager"
+            return "A conveninet and easy task tim"
         case .work:
             return "Get your task done on time"
     

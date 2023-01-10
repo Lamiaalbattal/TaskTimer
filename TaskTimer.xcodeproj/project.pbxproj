@@ -17,10 +17,8 @@
 		E0B04DFD2963A9B4009F357D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B04DFC2963A9B4009F357D /* Preview Assets.xcassets */; };
 		E0B04E042963ABBC009F357D /* OnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E032963ABBC009F357D /* OnbordingView.swift */; };
 		E0B04E062963AD26009F357D /* SingleOnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E052963AD26009F357D /* SingleOnbordingView.swift */; };
-		E0B04E082964DE24009F357D /* TaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E072964DE24009F357D /* TaskPage.swift */; };
 		E0B04E0A2964DFF3009F357D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E092964DFF3009F357D /* SplashScreenView.swift */; };
 		E0B04E0D296A01C9009F357D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B04E0F296A01C9009F357D /* Localizable.strings */; };
-		E0B04E12296AB469009F357D /* timerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E11296AB469009F357D /* timerPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +33,9 @@
 		E0B04DFC2963A9B4009F357D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0B04E032963ABBC009F357D /* OnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingView.swift; sourceTree = "<group>"; };
 		E0B04E052963AD26009F357D /* SingleOnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOnbordingView.swift; sourceTree = "<group>"; };
-		E0B04E072964DE24009F357D /* TaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPage.swift; sourceTree = "<group>"; };
 		E0B04E092964DFF3009F357D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		E0B04E0E296A01C9009F357D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E0B04E10296A0350009F357D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E0B04E11296AB469009F357D /* timerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +49,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E01930DD296E04EA00A85770 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0B04DF52963A9B3009F357D /* TaskTimerApp.swift */,
+				E0B04E032963ABBC009F357D /* OnbordingView.swift */,
+				E01930D3296B5D8E00A85770 /* HomeView.swift */,
+				E0B04E052963AD26009F357D /* SingleOnbordingView.swift */,
+				E0B04E092964DFF3009F357D /* SplashScreenView.swift */,
+				E01930CF296B5CC100A85770 /* CountPickerView.swift */,
+				E01930D7296B5E7300A85770 /* TimerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E01930DE296E061400A85770 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E01930D5296B5E3500A85770 /* methods.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E01930DF296E06B000A85770 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E01930D1296B5D0E00A85770 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E01930E0296E091000A85770 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				E0B04DF92963A9B4009F357D /* Assets.xcassets */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
 		E0B04DE92963A9B3009F357D = {
 			isa = PBXGroup;
 			children = (
-				E01930D7296B5E7300A85770 /* TimerView.swift */,
-				E01930D5296B5E3500A85770 /* methods.swift */,
-				E01930D3296B5D8E00A85770 /* HomeView.swift */,
-				E01930D1296B5D0E00A85770 /* HomeViewModel.swift */,
-				E01930CF296B5CC100A85770 /* CountPickerView.swift */,
-				E0B04E11296AB469009F357D /* timerPage.swift */,
-				E0B04E0F296A01C9009F357D /* Localizable.strings */,
 				E0B04DF42963A9B3009F357D /* TaskTimer */,
+				E01930DE296E061400A85770 /* Model */,
+				E01930DF296E06B000A85770 /* ViewModel */,
+				E0B04E0F296A01C9009F357D /* Localizable.strings */,
 				E0B04DF32963A9B3009F357D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,13 +109,8 @@
 		E0B04DF42963A9B3009F357D /* TaskTimer */ = {
 			isa = PBXGroup;
 			children = (
-				E0B04DF52963A9B3009F357D /* TaskTimerApp.swift */,
-				E0B04E092964DFF3009F357D /* SplashScreenView.swift */,
-				E0B04E032963ABBC009F357D /* OnbordingView.swift */,
-				E0B04E052963AD26009F357D /* SingleOnbordingView.swift */,
-				E0B04E072964DE24009F357D /* TaskPage.swift */,
-				E0B04DF92963A9B4009F357D /* Assets.xcassets */,
 				E0B04DFB2963A9B4009F357D /* Preview Content */,
+				E01930DD296E04EA00A85770 /* View */,
 			);
 			path = TaskTimer;
 			sourceTree = "<group>";
@@ -94,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E0B04DFC2963A9B4009F357D /* Preview Assets.xcassets */,
+				E01930E0296E091000A85770 /* shared */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -171,9 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01930D4296B5D8E00A85770 /* HomeView.swift in Sources */,
-				E0B04E082964DE24009F357D /* TaskPage.swift in Sources */,
 				E0B04E042963ABBC009F357D /* OnbordingView.swift in Sources */,
-				E0B04E12296AB469009F357D /* timerPage.swift in Sources */,
 				E01930D6296B5E3500A85770 /* methods.swift in Sources */,
 				E01930D2296B5D0E00A85770 /* HomeViewModel.swift in Sources */,
 				E01930D8296B5E7300A85770 /* TimerView.swift in Sources */,
@@ -318,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTimer/Preview Content\"";
@@ -347,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTimer/Preview Content\"";

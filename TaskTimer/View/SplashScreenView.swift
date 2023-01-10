@@ -12,7 +12,6 @@ struct SplashScreenView: View {
     @State var isActive : Bool = false
     @State private var size = 0.5
     @State private var opacity = 0.5
-    
     @AppStorage("isUserOnboarded") var isUserOnboarded: Bool = false
     
     var body: some View {
@@ -21,15 +20,12 @@ struct SplashScreenView: View {
             if !isUserOnboarded {
                 OnbordingView()
             } else {
-                TaskPage()
+                HomeView()
             }
         } else {
-            ZStack {
-//                Color("splashColor")
-//                    .ignoresSafeArea()
-//                
+            ZStack {          
                 Image("logo")
-//                    .resizable()
+                    .resizable()
                     .scaledToFit()
                     .aspectRatio(0.3, contentMode: .fit)
                     .scaleEffect(size)

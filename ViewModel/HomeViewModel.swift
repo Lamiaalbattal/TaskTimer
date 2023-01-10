@@ -14,7 +14,8 @@ class HomeViewModel: ObservableObject {
     var timer = Timer()
     @Published var timerActive = false
     @Published var duration = 0.0
-    
+    @Published var isStarted: Bool = false
+    @Published var isFinished: Bool = false
     @Published var showPickerSheet = false
     
     init() { }
@@ -54,9 +55,19 @@ class HomeViewModel: ObservableObject {
             timerActive = false
             timer.invalidate()
         } else { enableTimerMethod() }
+      
+    }
+    func updateTimerButton(hours: Int, mins: Int, secs: Int) {
+        if hours == 0 && mins == 0 && secs == 0{
+            isStarted = false
+            print("Finished")
+        }
+        
+      
     }
     
     func stopTimerButton() {
+        isFinished = true
         timerActive = false; timer.invalidate()
         progress = 0; duration = 0
     }

@@ -12,7 +12,7 @@ struct TaskTimerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashScreenView()
             
         }
     }

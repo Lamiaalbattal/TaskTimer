@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   TaskTimer
 
@@ -10,8 +10,28 @@
 "Work On Time" = "اعمل في الوقت المحدد" ;
 "A conveninet and easy task manager" = "مدير مهام مناسب وسهل" ;
 "Get your task done on time" = "أنجز مهامك في وقتها" ;
-"skip" = " تجاهل" ;
+"skip" = "تخطي" ;
 "Get Started" = " ابدأ" ;
-"Add Task" = "أضف مهمه" ;
-"Tasks" = "المهام";
-"Task Name" = "اسم المهمه";
+"close" = "اغلاق" ;
+"Add timer" = "اضف مؤقت" ;
+"Stop timer" = "ايقاف" ;
+"Pause timer" = "إيقاف مؤقت" ;
+"Task timer logo" =  "مؤقت المهام" ;
+"Start" = "ابدأ" ;
+"hours" = "ساعة" ;
+"minutes" = "دقيقة" ;
+"seconds" = "ثانية" ;
+"hrs" = "س" ;
+"min" = "د" ;
+"sec" = "ث" ;
+"mins" = "دقيقة" ;
+"secs" = "ثانية" ;
+"Congratulations You did it honey 🥳"  = "مبروك انجزت اللي عليك 🥳 " ;
+
+//"hours" = "س" ;
+//"mins" = "د" ;
+//"secs" = "ث" ;
+//"hours" = "س" ;
+//"mins" = "د" ;
+//"secs" = "ث" ;
+//"hours" = "ساعة" ;
