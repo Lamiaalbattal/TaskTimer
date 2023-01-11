@@ -27,6 +27,8 @@
 		E01930D3296B5D8E00A85770 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E01930D5296B5E3500A85770 /* methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = methods.swift; sourceTree = "<group>"; };
 		E01930D7296B5E7300A85770 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E01930E3296EAB5500A85770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E01930E4296EAB9F00A85770 /* TaskTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskTimer.entitlements; sourceTree = "<group>"; };
 		E0B04DF22963A9B3009F357D /* TaskTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B04DF52963A9B3009F357D /* TaskTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerApp.swift; sourceTree = "<group>"; };
 		E0B04DF92963A9B4009F357D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +111,8 @@
 		E0B04DF42963A9B3009F357D /* TaskTimer */ = {
 			isa = PBXGroup;
 			children = (
+				E01930E4296EAB9F00A85770 /* TaskTimer.entitlements */,
+				E01930E3296EAB5500A85770 /* Info.plist */,
 				E0B04DFB2963A9B4009F357D /* Preview Content */,
 				E01930DD296E04EA00A85770 /* View */,
 			);
@@ -343,12 +347,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = TaskTimer/TaskTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = DLY9DRQ866;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -373,12 +379,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = TaskTimer/TaskTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = DLY9DRQ866;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

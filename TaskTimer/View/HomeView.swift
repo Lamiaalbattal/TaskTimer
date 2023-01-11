@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+
+import UserNotifications
+
 struct HomeView: View {
     
     @ObservedObject var viewModel = HomeViewModel()
@@ -32,14 +35,13 @@ struct HomeView: View {
             // Picker Sheet
             
             CountPickerView(viewModel: viewModel).offset(x: 0, y: viewModel.showPickerSheet ? 0 : 1500)
+            
         }
         
         .animation(.spring())
-        
+   
     }
-    
 }
-
 
 
 struct HomeView_Previews: PreviewProvider {
@@ -47,5 +49,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
-
 

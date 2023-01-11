@@ -20,7 +20,7 @@ struct TimerView: View {
                 
                     .resizable()
                     .frame(width: 54, height: 60)
-                    .foregroundColor(Color.accentColor).offset(x: -2, y: 0)
+                    .foregroundColor(Color.accentColor).offset(x: 3, y: 0)
                     .accessibilityLabel("Add timer")
                 
             } else {
