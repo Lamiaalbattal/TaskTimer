@@ -29,7 +29,7 @@ enum OnbordingType: CaseIterable {
     var title: String {
         switch self {
         case .time:
-            return "Master you minutes to master your life E"
+            return "Master you minutes to master your life ."
         case .task:
             return "Manage Your Tasks"
         case .work:
