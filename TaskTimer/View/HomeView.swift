@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import UserNotifications
-
 struct HomeView: View {
     
     @ObservedObject var viewModel = HomeViewModel()

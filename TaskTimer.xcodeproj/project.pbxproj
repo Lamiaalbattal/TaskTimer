@@ -12,8 +12,9 @@
 		E01930D4296B5D8E00A85770 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930D3296B5D8E00A85770 /* HomeView.swift */; };
 		E01930D6296B5E3500A85770 /* methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930D5296B5E3500A85770 /* methods.swift */; };
 		E01930D8296B5E7300A85770 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01930D7296B5E7300A85770 /* TimerView.swift */; };
+		E01930E6296EBB4800A85770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01930E5296EBB4800A85770 /* Assets.xcassets */; };
+		E01930E8296EBBC900A85770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01930E7296EBBC900A85770 /* Assets.xcassets */; };
 		E0B04DF62963A9B3009F357D /* TaskTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04DF52963A9B3009F357D /* TaskTimerApp.swift */; };
-		E0B04DFA2963A9B4009F357D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B04DF92963A9B4009F357D /* Assets.xcassets */; };
 		E0B04DFD2963A9B4009F357D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B04DFC2963A9B4009F357D /* Preview Assets.xcassets */; };
 		E0B04E042963ABBC009F357D /* OnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E032963ABBC009F357D /* OnbordingView.swift */; };
 		E0B04E062963AD26009F357D /* SingleOnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B04E052963AD26009F357D /* SingleOnbordingView.swift */; };
@@ -29,9 +30,10 @@
 		E01930D7296B5E7300A85770 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E01930E3296EAB5500A85770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E01930E4296EAB9F00A85770 /* TaskTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskTimer.entitlements; sourceTree = "<group>"; };
+		E01930E5296EBB4800A85770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../AppIcons-2/Assets.xcassets"; sourceTree = "<group>"; };
+		E01930E7296EBBC900A85770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		E0B04DF22963A9B3009F357D /* TaskTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B04DF52963A9B3009F357D /* TaskTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerApp.swift; sourceTree = "<group>"; };
-		E0B04DF92963A9B4009F357D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0B04DFC2963A9B4009F357D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0B04E032963ABBC009F357D /* OnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingView.swift; sourceTree = "<group>"; };
 		E0B04E052963AD26009F357D /* SingleOnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOnbordingView.swift; sourceTree = "<group>"; };
@@ -84,7 +86,8 @@
 		E01930E0296E091000A85770 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				E0B04DF92963A9B4009F357D /* Assets.xcassets */,
+				E01930E7296EBBC900A85770 /* Assets.xcassets */,
+				E01930E5296EBB4800A85770 /* Assets.xcassets */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -189,7 +192,8 @@
 			files = (
 				E0B04DFD2963A9B4009F357D /* Preview Assets.xcassets in Resources */,
 				E0B04E0D296A01C9009F357D /* Localizable.strings in Resources */,
-				E0B04DFA2963A9B4009F357D /* Assets.xcassets in Resources */,
+				E01930E8296EBBC900A85770 /* Assets.xcassets in Resources */,
+				E01930E6296EBB4800A85770 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
