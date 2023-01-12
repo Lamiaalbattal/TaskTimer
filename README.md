@@ -3,24 +3,24 @@
 </div>
 <br />
 
-# TaskTimer ⏰
-  #### TaskTimer app built to help people get their task done on time. Made with love ❤️ by Lamia AlDossari and Atheer AlShehri
+## TaskTimer ⏰
+TaskTimer app built to help people get their task done on time. Made with love ❤️ by Lamia AlDossari and Atheer AlShehri
 <br />
 
-## OUR Big Idea🧏🏻‍♀️
-#### Our big idea is Inclusion
+## Our Big Idea🧏🏻‍♀️
+Inclusion
 <br />
 
 ## Challenge Statement🤯
-#### Design inclusive solution for those who want to do their tasks at specific time
+Design inclusive solution for those who want to do their tasks at specific time
 <br />
 
 ## Solution Concept𝌣
-#### Design inclusive solution to help busy people manage their time by completing their tasks on right time
+Design inclusive solution to help busy people manage their time by completing their tasks on right time
 <br />
 
 ## Technologies & Tools⚒️
-#### TaskTimer app built using SwiftUI , Accessibility , NotificationCenter and MVVM Architecture 🏗
+TaskTimer app built using SwiftUI , Accessibility(voice over) , NotificationCenter and MVVM Architecture 🏗
 <br />
 
 ## Demo of our App🎥
