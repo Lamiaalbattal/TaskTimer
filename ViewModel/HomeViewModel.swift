@@ -93,7 +93,7 @@ class HomeViewModel:NSObject,ObservableObject,UNUserNotificationCenterDelegate {
     func stopTimerButton() {
         isFinished = true
         timerActive = false; timer.invalidate()
-        progress = 1
+        progress = 0  ; duration = 0
         totalSeconds = 0
         staticTotalSeconds = 0
         timerStringvalue = "00:00"
@@ -112,26 +112,5 @@ class HomeViewModel:NSObject,ObservableObject,UNUserNotificationCenterDelegate {
                                                 UNTimeIntervalNotificationTrigger(timeInterval:TimeInterval(staticTotalSeconds),repeats:false))
         UNUserNotificationCenter.current().add(request)
     }
-    //    @objc func Notify(hours: Int, mins: Int, secs: Int){
-    //
-    //            let center = UNUserNotificationCenter.current()
-    //
-    //            let content = UNMutableNotificationContent()
-    //            content.title = "Timer Is Completed Successfully 🥳 !!"
-    //            content.categoryIdentifier = "alarm"
-    //            content.userInfo = ["customData": "fizzbuzz"]
-    //            content.sound = UNNotificationSound.default
-    //
-    //            var dateComponents = DateComponents()
-    //            dateComponents.hour = hours
-    //            dateComponents.minute = mins
-    //            dateComponents.second = secs
-    //            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-    //
-    //            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-    //            center.add(request)
-    //
-    //    }
-    //}
 }
 
