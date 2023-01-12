@@ -6,12 +6,10 @@
 //
 
 import Foundation
-//import UserNotifications
-//import SwiftUI
-
-class HomeViewModel:ObservableObject{
-    // NSObject,ObservableObject,UNUserNotificationCenterDelegate {
-    
+import UserNotifications
+import SwiftUI
+import NotificationCenter
+class HomeViewModel:NSObject,ObservableObject,UNUserNotificationCenterDelegate {
     @Published var progress = Double(0)
     
     var timer = Timer()
@@ -21,35 +19,33 @@ class HomeViewModel:ObservableObject{
     @Published var isStarted: Bool = false
     @Published var isFinished: Bool = false
     @Published var showPickerSheet = false
+    @Published var totalSeconds: Int = 0
+    @Published var staticTotalSeconds: Int = 0
+    @Published var timerStringvalue: String = "00:00"
     
     
-    //    override init() {
-    //        super.init ()
-    //        self.authorizeNotification()
-    //
-    //    }
-    
-    
-    
-    init() {
+    override init() {
+        super.init ()
+        self.authorizeNotification()
         
     }
+   
+    func authorizeNotification (){
+        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) { _, _ in
+        }
+        UNUserNotificationCenter.current().delegate = self
+    }
     
-    
-    //    func authorizeNotification (){
-    //        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) { _, _ in
-    //        }
-    //        UNUserNotificationCenter.current().delegate = self
-    //    }
-    //
-    //    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void){ completionHandler ([.sound,.banner])
-    //
-    //    }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void){ completionHandler ([.sound,.banner])
+        
+    }
     
     func setTimer(hours: Int, minutes: Int, seconds: Int) {
         let hrs = hours * 3600, mins = minutes * 60, secs = seconds
         let seconds = secs + mins + hrs
         self.duration = Double(seconds)
+        totalSeconds = (hours * 3600) + (minutes * 60) + seconds
+        staticTotalSeconds = totalSeconds
     }
     
     func displayPickerSheet() {
@@ -63,8 +59,8 @@ class HomeViewModel:ObservableObject{
             setTimer(hours: hours, minutes: mins, seconds: secs)
             enableTimerMethod()
             showPickerSheet = false
-            //            Notify(hours: hours, mins: mins, secs: secs)
-            
+            addNotification()
+           
         }
     }
     
@@ -97,29 +93,45 @@ class HomeViewModel:ObservableObject{
     func stopTimerButton() {
         isFinished = true
         timerActive = false; timer.invalidate()
-        progress = 0; duration = 0
+        progress = 1
+        totalSeconds = 0
+        staticTotalSeconds = 0
+        timerStringvalue = "00:00"
         
         
     }
+    
+    
+    func addNotification (){
+        let content = UNMutableNotificationContent ( )
+        content.title = "TaskTimer"
+        content.subtitle = "Timer Is Completed Successfully 🥳"
+        content.sound = UNNotificationSound.default
+        
+        let request = UNNotificationRequest(identifier: UUID() .uuidString, content: content, trigger:
+                                                UNTimeIntervalNotificationTrigger(timeInterval:TimeInterval(staticTotalSeconds),repeats:false))
+        UNUserNotificationCenter.current().add(request)
+    }
+    //    @objc func Notify(hours: Int, mins: Int, secs: Int){
+    //
+    //            let center = UNUserNotificationCenter.current()
+    //
+    //            let content = UNMutableNotificationContent()
+    //            content.title = "Timer Is Completed Successfully 🥳 !!"
+    //            content.categoryIdentifier = "alarm"
+    //            content.userInfo = ["customData": "fizzbuzz"]
+    //            content.sound = UNNotificationSound.default
+    //
+    //            var dateComponents = DateComponents()
+    //            dateComponents.hour = hours
+    //            dateComponents.minute = mins
+    //            dateComponents.second = secs
+    //            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+    //
+    //            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+    //            center.add(request)
+    //
+    //    }
+    //}
 }
-//    @objc func Notify(hours: Int, mins: Int, secs: Int){
-//
-//            let center = UNUserNotificationCenter.current()
-//
-//            let content = UNMutableNotificationContent()
-//            content.title = "Timer Is Completed Successfully 🥳 !!"
-//            content.categoryIdentifier = "alarm"
-//            content.userInfo = ["customData": "fizzbuzz"]
-//            content.sound = UNNotificationSound.default
-//
-//            var dateComponents = DateComponents()
-//            dateComponents.hour = hours
-//            dateComponents.minute = mins
-//            dateComponents.second = secs
-//            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-//
-//            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-//            center.add(request)
-//
-//    }
-//}
+

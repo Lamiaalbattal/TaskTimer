@@ -14,7 +14,7 @@ struct SingleOnbordingView: View {
     var body: some View {
         
         VStack(spacing:20) {
-            Text(onbordingType.title)
+            Text(onbordingType.localizedString)
                 .multilineTextAlignment(.center)
                 .font(.title).bold()
             

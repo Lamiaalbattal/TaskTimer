@@ -26,14 +26,14 @@ enum OnbordingType: CaseIterable {
         }
     }
     
-    var title: String {
+    var localizedString: String {
         switch self {
         case .time:
-            return "Master you minutes to master your life ."
+            return NSLocalizedString("Master you minutes to master your life" , comment: "")
         case .task:
-            return "Manage Your Tasks"
+            return NSLocalizedString("Manage Your Tasks" , comment: "")
         case .work:
-            return "Work On Time"
+            return NSLocalizedString("Work On Time" , comment: "")
     
         }
     }
@@ -43,9 +43,9 @@ enum OnbordingType: CaseIterable {
         case .time:
             return ""
         case .task:
-            return "A conveninet and easy task tim"
+            return NSLocalizedString("A conveninet and easy task timer" , comment: "")
         case .work:
-            return "Get your task done on time"
+            return NSLocalizedString("Get your task done on time" , comment: "")
     
         }
     }
@@ -63,7 +63,7 @@ struct OnbordingView: View {
             
             TabView(selection: $selectedOnboardingType) {
                 
-                ForEach(OnbordingType.allCases, id: \.title) { onbording in
+                ForEach(OnbordingType.allCases, id: \.localizedString) { onbording in
                     SingleOnbordingView(onbordingType: onbording)
                         .tag(onbording)
                         .onChange(of: selectedOnboardingType, perform: { newValue in
