@@ -93,7 +93,7 @@ class HomeViewModel:NSObject,ObservableObject,UNUserNotificationCenterDelegate {
     func stopTimerButton() {
         isFinished = true
         timerActive = false; timer.invalidate()
-        progress = 0  ; duration = 0
+        progress = 0 ; duration = 0
         totalSeconds = 0
         staticTotalSeconds = 0
         timerStringvalue = "00:00"

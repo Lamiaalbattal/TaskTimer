@@ -77,7 +77,7 @@ struct CountPickerView: View {
                        label: { Image(systemName: "arrowtriangle.right.fill").resizable().frame(width: 14, height: 18) })
                 .accessibilityLabel("Start")
                 .frame(width: 50, height: 50)
-                .offset(x: 2, y: 0)
+//                .offset(x: 2, y: 0)
                 .foregroundColor(Color("splashColor"))
                 .background(Color.accentColor).cornerRadius(25)
                 .padding(.bottom, 30)
